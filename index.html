@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,6 +83,31 @@
 <p align="center";><div style="font-size: 20px; "Microsoft yahei""; align="center";">De Montfort University, UK</div></p>
 <br/>
 <br/>
+
+<b>Results:</b>
+<br/>
+The scores of the entries from the two tracks are as follows. The top three will be awarded the first, second, and third prizes respectively! Congratulations to the winners, and thank you for your active participation!
+<br/><br/>
+<div style="width:100%; text-align:center;">
+  <img src="photos/p1.jpg" alt="p1" style="max-width:90%; margin-bottom:20px;"/>
+  <img src="photos/p2.jpg" alt="p2" style="max-width:90%;"/>
+</div>
+<br/>
+The organizers have verified the results of all participants. The code will be uploaded to the website after obtaining authorization from the participants. As some papers related to these algorithms have not been published yet, the codes are temporarily not released to protect the privacy of the algorithms. They will be published after the papers are accepted by relevant publishers. If you are interested in these algorithms, please contact the authors directly.
+<br/><br/>
+<b>Remarks:</b>
+<br/>
+Track 1: <br/>
+Yuqi Lei: <a href="mailto:leiyuqi0211@163.com">leiyuqi0211@163.com</a><br/>
+Qinqin Fan: <a href="mailto:qqfan@shmtu.edu.cn">qqfan@shmtu.edu.cn</a><br/>
+Ru Lei: <a href="mailto:leir@mail.nwpu.edu.cn">leir@mail.nwpu.edu.cn</a><br/>
+<br/>
+Track 2: <br/>
+Zhanglu Hou: <a href="mailto:zhanglhou@163.com">zhanglhou@163.com</a><br/>
+Dezheng Zhang: <a href="mailto:zhangdezheng1998@163.com">zhangdezheng1998@163.com</a><br/>
+Jiaqi Liu: <a href="mailto:871781134@qq.com">871781134@qq.com</a><br/>
+<br/>
+
 <b>Introduction</b>
 <br/>
 <br/>
@@ -103,16 +127,9 @@ There are two tracks of competition, briefly described as follows:<br/><br/>
 Track 1: Dynamic Unconstrained Multi-Objective Optimisation<br/><br/>
 Track 2: Dynamic Constrained Multi-Objective Optimisation<br/><br/>
 Please feel free to choose either one or multiple tracks for competition. However, you should make a separate submission for each track you have chosen.<br/><br/>
-J. Zou, S. Jiang, Z. Hou, X. Yu, Y. Hu and S. Yang, " Benchmark Problems for CEC’2025 Competition on Dynamic Multiobjective Optimisation," technical Report., China, January, 2025.<br/><br/>
+J. Zou, S. Jiang, Z. Hou, X. Yu, Y. Hu and S. Yang, " Benchmark Problems for CEC'2025 Competition on Dynamic Multiobjective Optimisation," technical Report., China, January, 2025.<br/><br/>
 
 <strong>All the benchmark functions have been implemented in MATLAB code (download <a href="https://github.com/yxz996/CEC2025DMOP" target="_self">here</a>)</strong>.Please note that, the sampled points of PF should be truncated properly to guarantee uniformity (the k-nearest neighbor method in SPEA2[5] could be used for this purpose). Your results of the competition can be submitted in the form of a brief technical report, which should be sent directly to Dr Xiaozhong Yu. Submissions in both forms will be considered as entries, therefore be ranked according to the competition evaluation criteria.<br/><br/>
-
-
-
-
-
-
-
 
 
 <b>References</b>
@@ -125,6 +142,33 @@ J. Zou, S. Jiang, Z. Hou, X. Yu, Y. Hu and S. Yang, " Benchmark Problems for CEC
 <br/><br/>
 
 <b>Important dates</b>
+<br/><br/>
+<b>Ranking calculation rules:</b>
+<br/><br/>
+Since the MHV metric's reference point is disregarded during performance evaluation, algorithm scoring relies solely on their MIGD rankings. The final performance score is determined by combining two ranking components (Synthesis Ranking, SR):
+<br/><br/>
+<div style="text-align:center;">
+  <span style="font-size: 18px;">
+    \( SR = \sum_{i=1}^{40} Rank_{MIGD} + \sum_{i=1}^{40} Rank_{mean(std.)} \)
+  </span>
+</div>
+<br/>
+<ul>
+  <li><b>MIGD Ranks:</b> Rankings based on the MIGD metric across all experiments.</li>
+  <li><b>Mean(Std) Ranks:</b> Rankings based on the standard deviation values calculated for each algorithm using the given test functions and performance indicators.</li>
+</ul>
+Once the SR values are computed for all algorithms, the final score is calculated as:
+<br/><br/>
+<div style="text-align:center;">
+  <span style="font-size: 18px;">
+    \( Score = \left(1 - \frac{SR - SR_{min}}{SR_{max} - SR_{min}}\right) \times 100 \)
+  </span>
+</div>
+<br/>
+When \( SR = SR_{max} \), score equals 0. It is worth noting that although the authors submitted MHV metric values, we did not include the results of the MHV metrics for scoring due to the lack of a harmonized reference point and in order to make comparisons as fair as possible.
+<br/><br/>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <br/><br/>
 Result submission deadline: <strong>June 15th, 2025</strong><br/><br/>
 Note: Please send your results directly to Dr Xiaozhong Yu (xzyu@ smail.xtu.edu.cn)<br/><br/>
